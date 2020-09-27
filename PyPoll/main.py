@@ -4,19 +4,18 @@ Created on Sat Sep 26 13:05:49 2020
 
 @author: Robert Bowen
 """
-#import os
 import csv
 
 # Path to collect data from the Resources folder
-election_csv = '/Users/RobandGrace/Documents/Bootcamp/python-challenge/PyPoll/Resources/election_data.csv'
+election_csv = 'Resources/election_data.csv'
 
 total_votes = int(-1)
 winnerName = "The Voters"
 
 def election_data(pollData):
     voter_id = int(pollData[0])
-    County = str(pollData[1])
-    Candidate = str(pollData[2])
+    county = str(pollData[1])
+    candidate = str(pollData[2])
 
 with open(election_csv, 'r') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
@@ -24,7 +23,7 @@ with open(election_csv, 'r') as csvfile:
     for row in csvreader:
         total_votes = total_votes + 1
   
-f = open("Analysis.txt", "w")        
+f = open("Analysis/electionResults.txt", "w")        
 f.write('Election Results\n\n')
 f.write('-------------------------\n')
 f.write(f'Total Votes: {total_votes}\n')
@@ -44,3 +43,4 @@ print('-------------------------')
 print(f'Winner: {winnerName}')
 print('-------------------------')
 
+#/Users/RobandGrace/Documents/Bootcamp/python-challenge/PyPoll/
