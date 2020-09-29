@@ -33,9 +33,7 @@ with open(election_csv, 'r') as csv_file:
 
 # If the candidate is already in the dictionary, increment their vote count
         if candidate in vote_result:
-            vote_count = vote_result[candidate]
-            vote_count = vote_count + 1
-            vote_result[candidate] = vote_count
+            vote_result[candidate] = vote_result[candidate] + 1
 
 # If the candidate is not in the dictionary, add them and give them 1 vote
         else:
