@@ -26,14 +26,14 @@ with open(budget_csv, 'r') as csv_file:
     for row in csv_reader:
         
 # count the number of rows -> number of months
-        total_months = total_months + 1 
+        total_months += 1 
 
 # Gather the date and gain/loss data from the data file row
         month = str(row[0])
         profit = int(row[1])
         
 # Add the profit from the row to the total profit        
-        total_profit = total_profit + profit
+        total_profit += profit
 
 # Compare the gain/loss info to the current values for greatest gain or loss -> if greater update list with new value and date
         if profit > hi_lo[1]:
