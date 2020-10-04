@@ -8,6 +8,7 @@ PyBank creates a Python script for analyzing financial records to determine:
 4. Greatest Monthly Increase in profits - Gain (Date and Amount)
 5. Greatest Monthly Decrease in profits - Loss (Date and Amount)
 
+
 Input budget data is read from a .csv file located in the resources folder.
 
 The script iterates through the budget data, counting the number of rows (months), and adding the gain/loss data to the total profits. 
@@ -27,6 +28,7 @@ PyPoll creates a Python script for analyzing voting results to determine:
 3. Percentage of votes each candidate won
 4. Total number of votes each candidate won
 5. The winner of the election based on votes
+
 
 Input budget data is read from a .csv file located in the resources folder. 
 
